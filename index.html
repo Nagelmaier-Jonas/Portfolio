@@ -9,14 +9,16 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.jnagelmaier.at/img/Portrait.png">
   <meta property="og:title" content="Jonas Nagelmaier">
-  <meta property="og:description" content="Willkommen im Portfolio von Jonas Nagelmaier, Software / Webentwickler. Entdecken Sie viele Projekte und umfangreiche Fachkenntnisse in diversen Bereichen.">
+  <meta property="og:description"
+        content="Willkommen im Portfolio von Jonas Nagelmaier, Software / Webentwickler. Entdecken Sie viele Projekte und umfangreiche Fachkenntnisse in diversen Bereichen.">
   <meta property="og:site_name" content="Jonas Nagelmaier">
   <meta property="og:url" content="https://www.jnagelmaier.at">
   <!-- Twitter Card tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@JonasNagelmaier">
   <meta name="twitter:title" content="Jonas Nagelmaier">
-  <meta name="twitter:description" content="Willkommen im Portfolio von Jonas Nagelmaier, Software / Webentwickler. Entdecken Sie viele Projekte und umfangreiche Fachkenntnisse in diversen Bereichen.">
+  <meta name="twitter:description"
+        content="Willkommen im Portfolio von Jonas Nagelmaier, Software / Webentwickler. Entdecken Sie viele Projekte und umfangreiche Fachkenntnisse in diversen Bereichen.">
   <meta name="twitter:image" content="https://www.jnagelmaier.at/img/Portrait.png">
   <meta name="twitter:image:alt" content="Jonas Nagelmaier">
   <title>Portfolio Jonas Nagelmaier</title>
@@ -50,10 +52,19 @@
       ]
     }
   </script>
+  <!-- EmailJS -->
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("65gu8mYkObbG-Y670");
+    })();
+  </script>
+  <script type="text/javascript" src="js/mail.js"></script>
 </head>
 
 <body>
-
 <nav class="navbar navbar-expand-lg">
   <div class="container">
 
@@ -138,7 +149,8 @@
             <h3 class="pt-2 mb-3">Ein kurzer Einblick in meine Person</h3>
 
             <p>Mein Name ist Jonas Nagelmaier und ich wohne im oberen Waldviertel in Österreich.</p>
-            <p>Ich habe meinen Abschuss an der <a title="Htl Krems" href="https://www.htlkrems.ac.at/" target="_blank" rel="noopener noreferrer">HTL Krems /
+            <p>Ich habe meinen Abschuss an der <a title="Htl Krems" href="https://www.htlkrems.ac.at/" target="_blank"
+                                                  rel="noopener noreferrer">HTL Krems /
               Informationstechnologie</a> absolviert und programmiere seit 5
               Jahren.</p>
             <p>Ich besitze umfangreiche Fähigkeiten in der Entwicklung von Anwendungen mit der Programmiersprache C#.
@@ -224,19 +236,22 @@
         </div>
 
         <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
-          <a title="Leyrer + Graf" href="https://www.leyrer-graf.at/" target="_blank" rel="noopener noreferrer"><img src="img/companies/leyrergraf-logo.png"
-                                                                     class="clients-image img-fluid"
-                                                                     alt="Leyrer + Graf"></a>
+          <a title="Leyrer + Graf" href="https://www.leyrer-graf.at/" target="_blank" rel="noopener noreferrer"><img
+            src="img/companies/leyrergraf-logo.png"
+            class="clients-image img-fluid"
+            alt="Leyrer + Graf"></a>
         </div>
 
         <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
-          <a title="Elk" href="https://www.elk.at/" target="_blank" rel="noopener noreferrer"><img src="img/companies/elk-logo.png"
-                                                             class="clients-image img-fluid" alt="Elk"></a>
+          <a title="Elk" href="https://www.elk.at/" target="_blank" rel="noopener noreferrer"><img
+            src="img/companies/elk-logo.png"
+            class="clients-image img-fluid" alt="Elk"></a>
         </div>
 
         <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
-          <a title="WEBprofil" href="https://www.webprofil.at/" target="_blank" rel="noopener noreferrer"><img src="img/companies/webprofil-logo.png"
-                                                                   class="clients-image img-fluid" alt="Webprofil"></a>
+          <a title="WEBprofil" href="https://www.webprofil.at/" target="_blank" rel="noopener noreferrer"><img
+            src="img/companies/webprofil-logo.png"
+            class="clients-image img-fluid" alt="Webprofil"></a>
         </div>
 
       </div>
@@ -265,7 +280,8 @@
 
                 <p>C#, Asp .Net, Entity Framework Core, Blazor</p>
 
-                <a title="C# Projekt" href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank" rel="noopener noreferrer"
+                <a title="C# Projekt" href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank"
+                   rel="noopener noreferrer"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -282,7 +298,8 @@
 
                 <p>Html, Css, JavaScript, Bootstrap</p>
 
-                <a title="Web Projekt" href="https://github.com/Nagelmaier-Jonas/Portfolio" target="_blank" rel="noopener noreferrer"
+                <a title="Web Projekt" href="https://github.com/Nagelmaier-Jonas/Portfolio" target="_blank"
+                   rel="noopener noreferrer"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -299,7 +316,8 @@
 
                 <p>Sql, MongoDb, Redis, Oracle</p>
 
-                <a title="Daten Projekt" href="https://github.com/Nagelmaier-Jonas" target="_blank" rel="noopener noreferrer"
+                <a title="Daten Projekt" href="https://github.com/Nagelmaier-Jonas" target="_blank"
+                   rel="noopener noreferrer"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -316,7 +334,8 @@
 
                 <p>Docker</p>
 
-                <a title="Container Projekt" href="https://github.com/Nagelmaier-Jonas" target="_blank" rel="noopener noreferrer"
+                <a title="Container Projekt" href="https://github.com/Nagelmaier-Jonas" target="_blank"
+                   rel="noopener noreferrer"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -333,7 +352,8 @@
 
                 <p>Python, Numpy, Spacy, TensorFlow, Keras</p>
 
-                <a title="Ai Projekt" href="https://github.com/Nagelmaier-Jonas/Ai" target="_blank" rel="noopener noreferrer"
+                <a title="Ai Projekt" href="https://github.com/Nagelmaier-Jonas/Ai" target="_blank"
+                   rel="noopener noreferrer"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -350,7 +370,8 @@
 
                 <p>Java, Spring</p>
 
-                <a title="Java Projekt" href="https://github.com/Nagelmaier-Jonas/AHITserver" target="_blank" rel="noopener noreferrer"
+                <a title="Java Projekt" href="https://github.com/Nagelmaier-Jonas/AHITserver" target="_blank"
+                   rel="noopener noreferrer"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -385,7 +406,8 @@
             <div class="projects-info">
               <small class="projects-tag">Simulation</small>
 
-              <a title="Great Powers" href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank" rel="noopener noreferrer"><h3
+              <a title="Great Powers" href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank"
+                 rel="noopener noreferrer"><h3
                 class="projects-title">Great Powers</h3></a>
             </div>
 
@@ -400,7 +422,8 @@
             <div class="projects-info">
               <small class="projects-tag">Embedded System</small>
 
-              <a title="Measurebot" href="https://github.com/Nagelmaier-Jonas/Measurebot" target="_blank" rel="noopener noreferrer"><h3 class="projects-title">
+              <a title="Measurebot" href="https://github.com/Nagelmaier-Jonas/Measurebot" target="_blank"
+                 rel="noopener noreferrer"><h3 class="projects-title">
                 Measurebot</h3></a>
             </div>
 
@@ -415,7 +438,8 @@
             <div class="projects-info">
               <small class="projects-tag">Web Applikation</small>
 
-              <a title="Simtrader" href="https://github.com/Nagelmaier-Jonas/Simtrader" target="_blank" rel="noopener noreferrer"><h3 class="projects-title">
+              <a title="Simtrader" href="https://github.com/Nagelmaier-Jonas/Simtrader" target="_blank"
+                 rel="noopener noreferrer"><h3 class="projects-title">
                 Simtrader</h3></a>
             </div>
 
@@ -449,25 +473,34 @@
             <strong class="site-footer-title d-block mb-3">Fähigkeiten</strong>
 
             <ul class="footer-menu">
-              <li class="footer-menu-item"><a title="Anwendungen" href="#technologies" class="footer-menu-link">Anwendungen</a></li>
+              <li class="footer-menu-item"><a title="Anwendungen" href="#technologies" class="footer-menu-link">Anwendungen</a>
+              </li>
 
-              <li class="footer-menu-item"><a title="Datenverarbeitung" href="#technologies" class="footer-menu-link">Datenverarbeitung</a></li>
+              <li class="footer-menu-item"><a title="Datenverarbeitung" href="#technologies" class="footer-menu-link">Datenverarbeitung</a>
+              </li>
 
-              <li class="footer-menu-item"><a title="Webentwicklung" href="#technologies" class="footer-menu-link">Webentwicklung</a></li>
+              <li class="footer-menu-item"><a title="Webentwicklung" href="#technologies" class="footer-menu-link">Webentwicklung</a>
+              </li>
 
-              <li class="footer-menu-item"><a title="Management" href="#technologies" class="footer-menu-link">Management</a></li>
+              <li class="footer-menu-item"><a title="Management" href="#technologies" class="footer-menu-link">Management</a>
+              </li>
             </ul>
 
             <strong class="site-footer-title d-block mt-4 mb-3">Social Media</strong>
 
             <ul class="social-icon">
-              <li class="social-icon-item"><a title="Linkedin" href="https://www.linkedin.com/in/jonas-nagelmaier-14977a261/"
-                                              target="_blank" rel="noopener noreferrer" class="social-icon-link bi-linkedin"></a></li>
-              <li class="social-icon-item"><a title="Instagram" href="https://www.instagram.com/jonas.nagelmaier/" target="_blank" rel="noopener noreferrer"
+              <li class="social-icon-item"><a title="Linkedin"
+                                              href="https://www.linkedin.com/in/jonas-nagelmaier-14977a261/"
+                                              target="_blank" rel="noopener noreferrer"
+                                              class="social-icon-link bi-linkedin"></a></li>
+              <li class="social-icon-item"><a title="Instagram" href="https://www.instagram.com/jonas.nagelmaier/"
+                                              target="_blank" rel="noopener noreferrer"
                                               class="social-icon-link bi-instagram"></a></li>
-              <li class="social-icon-item"><a title="Discord" href="https://discordapp.com/users/670364388393353216" target="_blank" rel="noopener noreferrer"
+              <li class="social-icon-item"><a title="Discord" href="https://discordapp.com/users/670364388393353216"
+                                              target="_blank" rel="noopener noreferrer"
                                               class="social-icon-link bi-discord"></a></li>
-              <li class="social-icon-item"><a title="Github" href="https://github.com/Nagelmaier-Jonas" target="_blank" rel="noopener noreferrer"
+              <li class="social-icon-item"><a title="Github" href="https://github.com/Nagelmaier-Jonas" target="_blank"
+                                              rel="noopener noreferrer"
                                               class="social-icon-link bi-github"></a></li>
             </ul>
 
@@ -504,11 +537,12 @@
         </div>
 
         <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-          <form action="https://formsubmit.co/el/gefajo" method="post" class="custom-form contact-form" role="form">
+          <form class="custom-form contact-form">
             <div class="row">
               <div class="col-lg-6 col-md-6 col-12">
                 <div class="form-floating">
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+                  <input type="text" name="visitor_name" id="name" class="form-control" placeholder="Name"
+                         pattern=[A-Z\sa-z]{3,20} required>
 
                   <label for="name">Name</label>
                 </div>
@@ -516,8 +550,8 @@
 
               <div class="col-lg-6 col-md-6 col-12">
                 <div class="form-floating">
-                  <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                         placeholder="Email address" required="">
+                  <input type="email" name="visitor_email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                         placeholder="Email Adresse" required>
 
                   <label for="email">Email Adresse</label>
                 </div>
@@ -525,7 +559,7 @@
 
               <div class="col-lg-3 col-md-6 col-6">
                 <div class="form-check form-check-inline">
-                  <input name="website" type="checkbox" class="form-check-input" id="inlineCheckbox1" value="1">
+                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox1" value="Infos">
 
                   <label class="form-check-label" for="inlineCheckbox1">
                     <i class="bi-info-lg form-check-icon"></i>
@@ -536,7 +570,7 @@
 
               <div class="col-lg-3 col-md-6 col-6">
                 <div class="form-check form-check-inline">
-                  <input name="branding" type="checkbox" class="form-check-input" id="inlineCheckbox2" value="1">
+                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox2" value="Anfrage">
 
                   <label class="form-check-label" for="inlineCheckbox2">
                     <i class="bi-box form-check-icon"></i>
@@ -547,7 +581,7 @@
 
               <div class="col-lg-3 col-md-6 col-6">
                 <div class="form-check form-check-inline">
-                  <input name="ecommerce" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
+                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox3" value="Technisches">
 
                   <label class="form-check-label" for="inlineCheckbox3">
                     <i class="bi-cpu form-check-icon"></i>
@@ -558,7 +592,7 @@
 
               <div class="col-lg-3 col-md-6 col-6">
                 <div class="form-check form-check-inline me-0">
-                  <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="1">
+                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox4" value="Sonstiges">
 
                   <label class="form-check-label" for="inlineCheckbox4">
                     <i class="bi-three-dots form-check-icon"></i>
@@ -569,15 +603,15 @@
 
               <div class="col-lg-12 col-12">
                 <div class="form-floating">
-                  <textarea class="form-control" id="message" name="message"
-                            placeholder="Tell me about the project"></textarea>
+                  <textarea class="form-control" id="message" name="visitor_message"
+                            placeholder="Tell me about the project" required></textarea>
 
                   <label for="message">Schreibe mir eine Nachricht...</label>
                 </div>
               </div>
 
               <div class="col-lg-3 col-12 ms-auto">
-                <button type="submit" class="form-control">Senden</button>
+                <button class="form-control" onclick="sendMail()">Senden</button>
               </div>
 
             </div>

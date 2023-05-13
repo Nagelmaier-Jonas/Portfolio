@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "route": "/php/contact.php",
+      "serve": "/.azure/functions/php/contact"
+    }
+  ]
+}
