@@ -1,15 +1,573 @@
 <!doctype html>
-<html class="no-js" lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jonas Nagelmaier</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.svg">
+  <meta name="description" content="">
+  <meta name="author" content="TemplateMo">
+  <title>Jonas Nagelmaier</title>
+  <!-- CSS FILES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<section id="header">
-  <p>Portfolio</p>
-</section>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="#home" class="navbar-brand mx-auto mx-lg-0"><img src="img/logo.svg" alt="logo" width="100px"></a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-lg-5">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Über mich</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#technologies">Technologien</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projekte</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero d-flex justify-content-center align-items-center" id="home">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 col-12">
+          <div class="hero-text">
+            <div class="hero-title-wrap d-flex align-items-center mb-4 mx-5">
+              <h1 class="hero-title ms-3 mb-0">'Jonas Nagelmaier</h1>
+            </div>
+
+            <h2 class="mb-4">Software / Webentwickler</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-12 position-relative">
+          <div class="hero-image-wrap"></div>
+          <img src="img/Portrait.png" class="hero-image img-fluid" alt="Portrait">
+        </div>
+
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#b7b7b7" fill-opacity="1"
+            d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+    </svg>
+  </section>
+
+
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-12">
+          <img src="img/pc.jpg" class="about-image img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+          <div class="about-thumb">
+
+            <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+              <h2 class="text-white me-4 mb-0">Über mich</h2>
+
+              <img src="img/Portrait.jpg" class="avatar-image img-fluid" alt="">
+            </div>
+
+            <h3 class="pt-2 mb-3">Ein kurzer Einblick in meine Person</h3>
+
+            <p>Mein Name ist Jonas Nagelmaier und ich wohnen im oberen Waldviertel in Österreich.</p>
+            <p>Ich habe meinen Abschuss an der HTL Krems / Informationstechnologie absolviert und programmiere seit 5
+              Jahren.</p>
+            <p>Ich besitze umfangreiche Fähigkeiten in der Entwicklung von Anwendungen mit der Programmiersprache C#.
+              Darüber hinaus verfüge ich über fundiertes Wissen in den Bereichen SQL, HTML, Python, C und Docker.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="featured section-padding">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-12">
+          <div class="profile-thumb">
+            <div class="profile-title">
+              <h4 class="mb-0">Information</h4>
+            </div>
+
+            <div class="profile-body">
+              <p>
+                <span class="profile-small-title">Name</span>
+                <span>Jonas Nagelmaier</span>
+              </p>
+
+              <p>
+                <span class="profile-small-title">Alter</span>
+                <span>19 Jahre</span>
+              </p>
+
+              <p>
+                <span class="profile-small-title">Email</span>
+                <span><a href="mailto:joe.nagelmaier@htlkrems.at">joe.nagelmaier@htlkrems.at</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+          <div class="about-thumb">
+            <div class="row">
+              <div class="col-lg-6 col-6 featured-border-bottom py-2">
+                <strong class="featured-numbers">5 Jahre</strong>
+
+                <p class="featured-text">Programmiererfahrung</p>
+              </div>
+
+              <div class="col-lg-6 col-6 featured-border-start featured-border-bottom ps-5 py-2">
+                <strong class="featured-numbers">10+</strong>
+
+                <p class="featured-text">Technologien</p>
+              </div>
+
+              <div class="col-lg-6 col-6 pt-4">
+                <strong class="featured-numbers">25+</strong>
+
+                <p class="featured-text">Projekte</p>
+              </div>
+
+              <div class="col-lg-6 col-6 featured-border-start ps-5 pt-4">
+                <strong class="featured-numbers">3+</strong>
+
+                <p class="featured-text">Auszeichnungen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="clients section-padding">
+    <div class="container">
+      <div class="row align-items-center justify-content-around">
+
+        <div class="col-lg-12 col-12">
+          <h3 class="text-center mb-5">Firmen, bei denen ich gearbeitet habe</h3>
+        </div>
+
+        <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
+          <a href="https://www.leyrer-graf.at/" target="_blank"><img src="img/companies/leyrergraf-logo.png"
+                                                                     class="clients-image img-fluid"
+                                                                     alt="Leyrer + Graf"></a>
+        </div>
+
+        <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
+          <a href="https://www.elk.at/" target="_blank"><img src="img/companies/elk-logo.png"
+                                                             class="clients-image img-fluid" alt="Elk"></a>
+        </div>
+
+        <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
+          <a href="https://www.webprofil.at/" target="_blank"><img src="img/companies/webprofil-logo.png"
+                                                                   class="clients-image img-fluid" alt="Webprofil"></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services section-padding" id="technologies">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-10 col-12 mx-auto">
+          <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+            <img src="img/technologies.jpg"
+                 class="avatar-image img-fluid" alt="">
+
+            <h2 class="text-white ms-4 mb-0">Technologien</h2>
+          </div>
+
+          <div class="row pt-lg-5">
+            <div class="col-lg-6 col-12">
+              <div class="services-thumb">
+                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                  <h3 class="mb-0">C# / .Net</h3>
+                </div>
+
+                <p>C#, Asp .Net, Entity Framework Core</p>
+
+                <a href="#" class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
+
+                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                  <img src="img/technologies/csharp.png" width="100" class="services-icon" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="services-thumb services-thumb-up">
+                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                  <h3 class="mb-0">Webentwicklung</h3>
+                </div>
+
+                <p>Html, Css, JavaScript, Bootstrap</p>
+
+                <a href="#" class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
+
+                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                  <img src="img/technologies/html.png" width="100" class="services-icon" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="services-thumb">
+                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                  <h3 class="mb-0">Datenverarbeitung</h3>
+                </div>
+
+                <p>Sql, MongoDb, Redis, Oracle</p>
+
+                <a href="#" class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
+
+                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                  <img src="img/technologies/sql.png" width="100" class="services-icon" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="services-thumb services-thumb-up">
+                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                  <h3 class="mb-0">Containerisierung</h3>
+                </div>
+
+                <p>Docker</p>
+
+                <a href="#" class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
+
+                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                  <img src="img/technologies/docker.png" width="100" class="services-icon" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="services-thumb">
+                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                  <h3 class="mb-0">Künstliche Intelligenz</h3>
+                </div>
+
+                <p>Python, Numpy, Spacy, TensorFlow, Keras</p>
+
+                <a href="#" class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
+
+                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                  <img src="img/technologies/python.png" width="100" class="services-icon" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="services-thumb services-thumb-last">
+                <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                  <h3 class="mb-0">Java</h3>
+                </div>
+
+                <p>Java, Spring</p>
+
+                <a href="#" class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
+
+                <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                  <img src="img/technologies/java.png" width="100" class="services-icon" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="projects section-padding" id="projects">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8 col-md-8 col-12 ms-auto">
+          <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+            <img src="img/projects.jpg" class="avatar-image img-fluid" alt="">
+
+            <h2 class="text-white ms-4 mb-0">Projekte</h2>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="projects-thumb">
+            <div class="projects-info">
+              <small class="projects-tag">Simulation</small>
+
+              <h3 class="projects-title">Great Powers</h3>
+            </div>
+
+            <a href="img/projects/GreatPowers.png" class="popup-image">
+              <img src="img/projects/GreatPowers.png" class="projects-image img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="projects-thumb">
+            <div class="projects-info">
+              <small class="projects-tag">Embedded System</small>
+
+              <h3 class="projects-title">Measurebot</h3>
+            </div>
+
+            <a href="img/projects/Measurebot.jpg" class="popup-image">
+              <img src="img/projects/Measurebot.jpg" class="projects-image img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="projects-thumb">
+            <div class="projects-info">
+              <small class="projects-tag">Web Applikation</small>
+
+              <h3 class="projects-title">Simtrader</h3>
+            </div>
+
+            <a href="img/projects/Simtrader.png" class="popup-image">
+              <img src="img/projects/Simtrader.png" class="projects-image img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-8 col-12">
+          <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+            <img src="img/contact.jpg" class="avatar-image img-fluid"
+                 alt="">
+
+            <h2 class="text-white ms-4 mb-0">Kontakt</h2>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+          <div class="contact-info contact-info-border-start d-flex flex-column">
+            <strong class="site-footer-title d-block mb-3">Fähigkeiten</strong>
+
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Anwendungen</a></li>
+
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Datenverarbeitung</a></li>
+
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Webentwicklung</a></li>
+
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Management</a></li>
+            </ul>
+
+            <strong class="site-footer-title d-block mt-4 mb-3">Social Media</strong>
+
+            <ul class="social-icon">
+              <li class="social-icon-item"><a href="https://www.linkedin.com/in/jonas-nagelmaier-14977a261/"
+                                              target="_blank" class="social-icon-link bi-linkedin"></a></li>
+              <li class="social-icon-item"><a href="https://www.instagram.com/jonas.nagelmaier/" target="_blank"
+                                              class="social-icon-link bi-instagram"></a></li>
+              <li class="social-icon-item"><a href="https://discordapp.com/users/670364388393353216" target="_blank"
+                                              class="social-icon-link bi-discord"></a></li>
+              <li class="social-icon-item"><a href="https://github.com/Nagelmaier-Jonas" target="_blank"
+                                              class="social-icon-link bi-github"></a></li>
+            </ul>
+
+            <strong class="site-footer-title d-block mt-4 mb-3">Downloads</strong>
+
+            <ul class="download-menu">
+              <li class="download-button"><a href="docs/Cv.pdf" download="Cv.pdf"
+                                             class="download-icon-link bi-download"><span class="download-span">Lebenslauf</span></a>
+              </li>
+              <li class="download-button"><a href="docs/Thesis.pdf" download="Thesis.pdf"
+                                             class="download-icon-link bi-download"><span class="download-span">Diplomarbeit</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+          <div class="contact-info d-flex flex-column">
+            <strong class="site-footer-title d-block mb-3">Über mich</strong>
+
+            <p class="mb-2">
+              Ich bin ein gelernter Informatiker und entwickle seit 2018 Webseiten und Anwendungen.
+            </p>
+
+            <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
+
+            <p>
+              <a href="mailto:joe.nagelmaier@gmail.com">
+                joe.nagelmaier@gmail.com
+              </a>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+          <form action="https://formsubmit.co/el/gefajo" method="post" class="custom-form contact-form" role="form">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+
+                  <label for="floatingInput">Name</label>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-floating">
+                  <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                         placeholder="Email address" required="">
+
+                  <label for="floatingInput">Email Adresse</label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-6">
+                <div class="form-check form-check-inline">
+                  <input name="website" type="checkbox" class="form-check-input" id="inlineCheckbox1" value="1">
+
+                  <label class="form-check-label" for="inlineCheckbox1">
+                    <i class="bi-info-lg form-check-icon"></i>
+                    <span class="form-check-label-text">Infos</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-6">
+                <div class="form-check form-check-inline">
+                  <input name="branding" type="checkbox" class="form-check-input" id="inlineCheckbox2" value="1">
+
+                  <label class="form-check-label" for="inlineCheckbox2">
+                    <i class="bi-box form-check-icon"></i>
+                    <span class="form-check-label-text">Anfrage</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-6">
+                <div class="form-check form-check-inline">
+                  <input name="ecommerce" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="1">
+
+                  <label class="form-check-label" for="inlineCheckbox3">
+                    <i class="bi-cpu form-check-icon"></i>
+                    <span class="form-check-label-text">Technisches</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-6">
+                <div class="form-check form-check-inline me-0">
+                  <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="1">
+
+                  <label class="form-check-label" for="inlineCheckbox4">
+                    <i class="bi-three-dots form-check-icon"></i>
+                    <span class="form-check-label-text">Sonstiges</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" id="message" name="message"
+                            placeholder="Tell me about the project"></textarea>
+
+                  <label for="floatingTextarea">Schreibe mir eine Nachricht...</label>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-12 ms-auto">
+                <button type="submit" class="form-control">Senden</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12 col-12">
+        <div class="copyright-text-wrap">
+          <p class="mb-0">
+            <span class="copyright-text">Copyright © 2023 <a
+              href="#">Jonas Nagemlaier</a> Alle Rechte vorbehalten. </span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
