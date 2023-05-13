@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="TemplateMo">
+  <meta name="description"
+        content="Willkommen im Portfolio von Jonas Nagelmaier, Software- und Webentwickler. Entdecken Sie viele Projekte und umfangreiche Fachkenntnisse in diversen Bereichen.">
   <title>Jonas Nagelmaier</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <!-- CSS FILES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +19,23 @@
   <link href="css/bootstrap-icons.css" rel="stylesheet">
   <link href="css/magnific-popup.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jonas Nagelmaier",
+      "description": "Software- und Webentwickler",
+      "image": "img/Portrait.png",
+      "url": "https://example.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/jonas-nagelmaier",
+        "https://github.com/Nagelmaier-Jonas",
+        "https://www.instagram.com/jonas.nagelmaier/",
+        "https://discordapp.com/users/670364388393353216"
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -26,24 +48,24 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a href="#home" class="navbar-brand mx-auto mx-lg-0"><img src="img/logo.svg" alt="logo" width="100px"></a>
+    <a title="Logo" href="#home" class="navbar-brand mx-auto mx-lg-0"><img src="img/logo.svg" alt="logo" width="100px"></a>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-lg-5">
         <li class="nav-item">
-          <a class="nav-link" href="#about">Über mich</a>
+          <a title="Über mich" class="nav-link" href="#about">Über mich</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#technologies">Technologien</a>
+          <a title="Technologien" class="nav-link" href="#technologies">Technologien</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projekte</a>
+          <a title="Projekte" class="nav-link" href="#projects">Projekte</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Kontakt</a>
+          <a title="Kontakt" class="nav-link" href="#contact">Kontakt</a>
         </li>
       </ul>
     </div>
@@ -102,7 +124,7 @@
             <h3 class="pt-2 mb-3">Ein kurzer Einblick in meine Person</h3>
 
             <p>Mein Name ist Jonas Nagelmaier und ich wohne im oberen Waldviertel in Österreich.</p>
-            <p>Ich habe meinen Abschuss an der <a href="https://www.htlkrems.ac.at/" target="_blank">HTL Krems /
+            <p>Ich habe meinen Abschuss an der <a title="Htl Krems" href="https://www.htlkrems.ac.at/" target="_blank">HTL Krems /
               Informationstechnologie</a> absolviert und programmiere seit 5
               Jahren.</p>
             <p>Ich besitze umfangreiche Fähigkeiten in der Entwicklung von Anwendungen mit der Programmiersprache C#.
@@ -138,7 +160,7 @@
 
               <p>
                 <span class="profile-small-title">Email</span>
-                <span><a href="mailto:joe.nagelmaier@gmail.com">joe.nagelmaier@gmail.com</a></span>
+                <span><a title="Email" href="mailto:joe.nagelmaier@gmail.com">joe.nagelmaier@gmail.com</a></span>
               </p>
             </div>
           </div>
@@ -188,18 +210,18 @@
         </div>
 
         <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
-          <a href="https://www.leyrer-graf.at/" target="_blank"><img src="img/companies/leyrergraf-logo.png"
+          <a title="Leyrer + Graf" href="https://www.leyrer-graf.at/" target="_blank"><img src="img/companies/leyrergraf-logo.png"
                                                                      class="clients-image img-fluid"
                                                                      alt="Leyrer + Graf"></a>
         </div>
 
         <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
-          <a href="https://www.elk.at/" target="_blank"><img src="img/companies/elk-logo.png"
+          <a title="Elk" href="https://www.elk.at/" target="_blank"><img src="img/companies/elk-logo.png"
                                                              class="clients-image img-fluid" alt="Elk"></a>
         </div>
 
         <div class="col-lg-2 col-4 clients-item-height d-flex align-items-center justify-content-center">
-          <a href="https://www.webprofil.at/" target="_blank"><img src="img/companies/webprofil-logo.png"
+          <a title="WEBprofil" href="https://www.webprofil.at/" target="_blank"><img src="img/companies/webprofil-logo.png"
                                                                    class="clients-image img-fluid" alt="Webprofil"></a>
         </div>
 
@@ -229,7 +251,7 @@
 
                 <p>C#, Asp .Net, Entity Framework Core, Blazor</p>
 
-                <a href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank"
+                <a title="C# Projekt" href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -246,7 +268,7 @@
 
                 <p>Html, Css, JavaScript, Bootstrap</p>
 
-                <a href="https://github.com/Nagelmaier-Jonas/Portfolio" target="_blank"
+                <a title="Web Projekt" href="https://github.com/Nagelmaier-Jonas/Portfolio" target="_blank"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -263,7 +285,7 @@
 
                 <p>Sql, MongoDb, Redis, Oracle</p>
 
-                <a href="https://github.com/Nagelmaier-Jonas" target="_blank"
+                <a title="Daten Projekt" href="https://github.com/Nagelmaier-Jonas" target="_blank"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -280,7 +302,7 @@
 
                 <p>Docker</p>
 
-                <a href="https://github.com/Nagelmaier-Jonas" target="_blank"
+                <a title="Container Projekt" href="https://github.com/Nagelmaier-Jonas" target="_blank"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -297,7 +319,7 @@
 
                 <p>Python, Numpy, Spacy, TensorFlow, Keras</p>
 
-                <a href="https://github.com/Nagelmaier-Jonas/Ai" target="_blank"
+                <a title="Ai Projekt" href="https://github.com/Nagelmaier-Jonas/Ai" target="_blank"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -314,7 +336,7 @@
 
                 <p>Java, Spring</p>
 
-                <a href="https://github.com/Nagelmaier-Jonas/AHITserver" target="_blank"
+                <a title="Java Projekt" href="https://github.com/Nagelmaier-Jonas/AHITserver" target="_blank"
                    class="custom-btn custom-border-btn btn mt-3">Mehr erfahren</a>
 
                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
@@ -349,11 +371,11 @@
             <div class="projects-info">
               <small class="projects-tag">Simulation</small>
 
-              <a href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank"><h3
+              <a title="Great Powers" href="https://github.com/Nagelmaier-Jonas/Great-Powers-Thesis" target="_blank"><h3
                 class="projects-title">Great Powers</h3></a>
             </div>
 
-            <a href="img/projects/GreatPowers.png" class="popup-image">
+            <a title="Great Powers" href="img/projects/GreatPowers.png" class="popup-image">
               <img src="img/projects/GreatPowers.png" class="projects-image img-fluid" alt="">
             </a>
           </div>
@@ -364,10 +386,11 @@
             <div class="projects-info">
               <small class="projects-tag">Embedded System</small>
 
-              <a href="https://github.com/Nagelmaier-Jonas/Measurebot" target="_blank"><h3 class="projects-title">Measurebot</h3></a>
+              <a title="Measurebot" href="https://github.com/Nagelmaier-Jonas/Measurebot" target="_blank"><h3 class="projects-title">
+                Measurebot</h3></a>
             </div>
 
-            <a href="img/projects/Measurebot.jpg" class="popup-image">
+            <a title="Measurebot" href="img/projects/Measurebot.jpg" class="popup-image">
               <img src="img/projects/Measurebot.jpg" class="projects-image img-fluid" alt="">
             </a>
           </div>
@@ -378,10 +401,11 @@
             <div class="projects-info">
               <small class="projects-tag">Web Applikation</small>
 
-              <a href="https://github.com/Nagelmaier-Jonas/Simtrader" target="_blank"><h3 class="projects-title">Simtrader</h3></a>
+              <a title="Simtrader" href="https://github.com/Nagelmaier-Jonas/Simtrader" target="_blank"><h3 class="projects-title">
+                Simtrader</h3></a>
             </div>
 
-            <a href="img/projects/Simtrader.png" class="popup-image">
+            <a title="Simtrader" href="img/projects/Simtrader.png" class="popup-image">
               <img src="img/projects/Simtrader.png" class="projects-image img-fluid" alt="">
             </a>
           </div>
@@ -411,35 +435,35 @@
             <strong class="site-footer-title d-block mb-3">Fähigkeiten</strong>
 
             <ul class="footer-menu">
-              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Anwendungen</a></li>
+              <li class="footer-menu-item"><a title="Anwendungen" href="#technologies" class="footer-menu-link">Anwendungen</a></li>
 
-              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Datenverarbeitung</a></li>
+              <li class="footer-menu-item"><a title="Datenverarbeitung" href="#technologies" class="footer-menu-link">Datenverarbeitung</a></li>
 
-              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Webentwicklung</a></li>
+              <li class="footer-menu-item"><a title="Webentwicklung" href="#technologies" class="footer-menu-link">Webentwicklung</a></li>
 
-              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Management</a></li>
+              <li class="footer-menu-item"><a title="Management" href="#technologies" class="footer-menu-link">Management</a></li>
             </ul>
 
             <strong class="site-footer-title d-block mt-4 mb-3">Social Media</strong>
 
             <ul class="social-icon">
-              <li class="social-icon-item"><a href="https://www.linkedin.com/in/jonas-nagelmaier-14977a261/"
+              <li class="social-icon-item"><a title="Linkedin" href="https://www.linkedin.com/in/jonas-nagelmaier-14977a261/"
                                               target="_blank" class="social-icon-link bi-linkedin"></a></li>
-              <li class="social-icon-item"><a href="https://www.instagram.com/jonas.nagelmaier/" target="_blank"
+              <li class="social-icon-item"><a title="Instagram" href="https://www.instagram.com/jonas.nagelmaier/" target="_blank"
                                               class="social-icon-link bi-instagram"></a></li>
-              <li class="social-icon-item"><a href="https://discordapp.com/users/670364388393353216" target="_blank"
+              <li class="social-icon-item"><a title="Discord" href="https://discordapp.com/users/670364388393353216" target="_blank"
                                               class="social-icon-link bi-discord"></a></li>
-              <li class="social-icon-item"><a href="https://github.com/Nagelmaier-Jonas" target="_blank"
+              <li class="social-icon-item"><a title="Github" href="https://github.com/Nagelmaier-Jonas" target="_blank"
                                               class="social-icon-link bi-github"></a></li>
             </ul>
 
             <strong class="site-footer-title d-block mt-4 mb-3">Downloads</strong>
 
             <ul class="download-menu">
-              <li class="download-button"><a href="docs/Cv.pdf" download="Cv.pdf"
+              <li class="download-button"><a title="Lebenslauf" href="docs/Cv.pdf" download="Cv.pdf"
                                              class="download-icon-link bi-download"><span class="download-span">Lebenslauf</span></a>
               </li>
-              <li class="download-button"><a href="docs/Thesis.pdf" download="Thesis.pdf"
+              <li class="download-button"><a title="Diplomarbeit" href="docs/Thesis.pdf" download="Thesis.pdf"
                                              class="download-icon-link bi-download"><span class="download-span">Diplomarbeit</span></a>
               </li>
             </ul>
@@ -457,7 +481,7 @@
             <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
 
             <p>
-              <a href="mailto:joe.nagelmaier@gmail.com">
+              <a title="Email" href="mailto:joe.nagelmaier@gmail.com">
                 joe.nagelmaier@gmail.com
               </a>
             </p>
@@ -548,7 +572,6 @@
 
       </div>
     </div>
-    </div>
   </section>
 
 </main>
@@ -560,8 +583,7 @@
       <div class="col-lg-12 col-12">
         <div class="copyright-text-wrap">
           <p class="mb-0">
-            <span class="copyright-text">Copyright © 2023 <a
-              href="#">Jonas Nagemlaier</a> Alle Rechte vorbehalten. </span>
+            <span class="copyright-text">Copyright © 2023 Jonas Nagemlaier Alle Rechte vorbehalten. </span>
           </p>
         </div>
       </div>
