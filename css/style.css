@@ -2,40 +2,89 @@
   CUSTOM PROPERTIES ( VARIABLES )
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #65befa;
-  --secondary-color:              #579dda;
-  --section-bg-color:             #f9f9f9;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #e9eaeb;
-  --featured-border-color:        #2c74a5;
+  --white-color: #ffffff;
+  --primary-color: #65befa;
+  --secondary-color: #579dda;
+  --section-bg-color: #f9f9f9;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
+  --featured-border-color: #2c74a5;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family: 'DM Sans', sans-serif;
 
-  --h1-font-size:                 62px;
-  --h2-font-size:                 48px;
-  --h3-font-size:                 36px;
-  --h4-font-size:                 32px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  18px;
-  --menu-font-size:               15px;
-  --copyright-font-size:          14px;
-  --footer-font-size:             11px;
+  --h1-font-size: 62px;
+  --h2-font-size: 48px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --menu-font-size: 15px;
+  --copyright-font-size: 14px;
+  --footer-font-size: 11px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-bold:             700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --h1-font-size: 44px;
+    --h2-font-size: 36px;
+    --h3-font-size: 30px;
+    --h4-font-size: 24px;
+    --h5-font-size: 20px;
+    --h6-font-size: 18px;
+    --p-font-size: 16px;
+    --menu-font-size: 14px;
+    --footer-font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .company-logos {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  :root {
+    --h1-font-size: 34px;
+    --h2-font-size: 30px;
+    --h3-font-size: 24px;
+    --h4-font-size: 20px;
+    --h5-font-size: 18px;
+    --h6-font-size: 16px;
+    --p-font-size: 14px;
+    --menu-font-size: 12px;
+    --footer-font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  :root {
+    --h1-font-size: 30px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h4-font-size: 18px;
+    --h5-font-size: 16px;
+    --h6-font-size: 14px;
+    --p-font-size: 12px;
+    --menu-font-size: 10px;
+    --footer-font-size: 8px;
+  }
 }
 
 body {
-    background: var(--white-color);
-    font-family: var(--body-font-family);
+  background: var(--white-color);
+  font-family: var(--body-font-family);
 }
 
 
@@ -216,7 +265,7 @@ strong {
 
 .custom-btn:hover {
   background: var(--primary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   color: var(--white-color);
 }
 
@@ -233,11 +282,11 @@ strong {
 }
 
 .custom-link {
-	background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .custom-link:hover {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 
@@ -418,7 +467,7 @@ strong {
   padding-bottom: 330px;
 }
 
-@media  screen and (min-width: 991px) {
+@media screen and (min-width: 991px) {
   .hero {
     height: 60vh;
   }
@@ -427,18 +476,18 @@ strong {
 .hero-title,
 .hero h2 {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   border-radius: var(--border-radius-large);
   display: inline-block;
   padding: 8px 24px;
 }
 
 .hero-title {
-	font-size: 44px;
+  font-size: var(--h1-font-size);
 }
 
 .hero h2 {
-	font-size: 38px;
+  font-size: var(--h2-font-size);
 }
 
 .hero-text {
@@ -551,7 +600,7 @@ strong {
 -----------------------------------------*/
 
 .clients-item-height {
-	height: 120px;
+  height: 120px;
 }
 
 .clients-image {
@@ -599,7 +648,7 @@ strong {
 
 .services-thumb:hover {
   border: 2px solid var(--secondary-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 .services-thumb:hover .services-icon-wrap {
@@ -751,7 +800,7 @@ strong {
   outline: none;
 }
 
-.form-floating>label {
+.form-floating > label {
   color: var(--p-color);
 }
 
@@ -932,11 +981,13 @@ strong {
   margin: 0;
   padding: 0;
 }
+
 .download-button {
   list-style: none;
   display: inline-block;
   vertical-align: top;
 }
+
 .download-icon-link {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-medium);
@@ -950,11 +1001,13 @@ strong {
   padding: 6px 14px;
   min-width: 70px;
 }
+
 .download-icon-link:hover {
   background: var(--secondary-color);
   border-color: transparent;
   color: var(--white-color);
 }
+
 .download-span {
   padding-left: 10px;
 }
@@ -980,19 +1033,20 @@ strong {
   }
 
   .hero-title,
-	.hero h2 {
-	  font-size: var(--h2-font-size);
-	}
+  .hero h2 {
+    font-size: var(--h2-font-size);
+  }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
   .hero-image {
     right: 150px;
     min-width: auto;
     width: 400px;
   }
 }
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 767px) {
   .hero-image {
     right: 70px;
     min-width: auto;
