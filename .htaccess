@@ -51,6 +51,14 @@
 </IfModule>
 
 # ----------------------------------------------------------------------
+# | Set UTF-8 Header                                                   |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Setze den Content-Type-Header auf text/html mit UTF-8 Zeichensatz
+    AddType 'text/html; charset=UTF-8' html
+</IfModule>
+
+# ----------------------------------------------------------------------
 # | Cross-origin web fonts                                             |
 # ----------------------------------------------------------------------
 
@@ -427,9 +435,9 @@ AddDefaultCharset utf-8
 #     RewriteCond %{SERVER_ADDR} !=127.0.0.1
 #     RewriteCond %{SERVER_ADDR} !=::1
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-      RewriteEngine on
-      RewriteCond %{HTTP_HOST} ^jnagelmaier.at [NC]
-      RewriteRule ^(.*)$ http://www.jnagelmaier.at/$1 [L,R=301]
+      RewriteEngine On
+      RewriteCond %{HTTP_HOST} !^www.jnagelmaier.at$
+      RewriteRule ^(.*)$ https://www.jnagelmaier.at/$1 [R=301,L]
 
 # </IfModule>
 
