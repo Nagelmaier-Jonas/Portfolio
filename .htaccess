@@ -429,7 +429,7 @@ AddDefaultCharset utf-8
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
       RewriteEngine on
       RewriteCond %{HTTP_HOST} ^jnagelmaier.at [NC]
-      RewriteRule ^(.*)$ https://www.jnagelmaier.at/$1 [L,R=301]
+      RewriteRule ^(.*)$ http://www.jnagelmaier.at/$1 [L,R=301]
 
 # </IfModule>
 
