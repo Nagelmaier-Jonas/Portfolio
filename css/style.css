@@ -467,6 +467,10 @@ strong {
   padding-bottom: 330px;
 }
 
+.big-picture {
+  max-width: fit-content;
+}
+
 @media screen and (min-width: 991px) {
   .hero {
     height: 60vh;
@@ -1048,7 +1052,7 @@ strong {
 
 @media screen and (max-width: 767px) {
   .hero-image {
-    right: 70px;
+    right: auto;
     min-width: auto;
     width: 400px;
   }
