@@ -1,15 +1,16 @@
 function sendMail() {
+  var selectedField = document.querySelector('input[name="field"]:checked');
   var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    field: document.querySelector('input[name="field"]:checked').value,
-    message: document.getElementById("message").value
+    name: document.getElementById("name").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    field: selectedField ? selectedField.value : "",
+    message: document.getElementById("message").value.trim()
   };
 
   const serviceID = 'service_xkkdera';
   const templateID = 'template_ag22ynq';
 
-  if (params.name === "" || params.email === "" || params.message === "" || params.field === "") {
+  if (!params.name || !params.email || !params.message || !params.field) {
     return;
   }
 
