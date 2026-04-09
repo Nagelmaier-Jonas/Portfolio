@@ -29,7 +29,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://www.jnagelmaier.at/">
-  <link rel="alternate" hreflang="en" href="https://www.jnagelmaier.at/en/">
+  <link rel="alternate" hreflang="en" href="https://www.jnagelmaier.at/">
   <link rel="alternate" hreflang="de" href="https://www.jnagelmaier.at/de/">
   <link rel="alternate" hreflang="x-default" href="https://www.jnagelmaier.at/">
   <!-- CSS FILES -->
@@ -56,16 +56,6 @@
       ]
     }
   </script>
-  <!-- EmailJS -->
-  <script type="text/javascript"
-          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init("65gu8mYkObbG-Y670");
-    })();
-  </script>
-  <script type="text/javascript" src="js/mail.js"></script>
 </head>
 
 <body>
@@ -100,7 +90,7 @@
     </div>
     <div class="lang-switch" aria-label="Language switcher">
       <a href="de/" class="lang-icon" aria-label="Deutsch" title="Deutsch"><img src="img/flags/de.svg" class="lang-flag" alt="" aria-hidden="true"></a>
-      <a href="en/" class="lang-icon active" aria-label="English" title="English"><img src="img/flags/en.svg" class="lang-flag" alt="" aria-hidden="true"></a>
+      <a href="/" class="lang-icon active" aria-label="English" title="English"><img src="img/flags/en.svg" class="lang-flag" alt="" aria-hidden="true"></a>
     </div>
 
   </div>
@@ -540,86 +530,13 @@
           </div>
         </div>
 
-        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-          <form class="custom-form contact-form">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-floating">
-                  <input type="text" name="visitor_name" id="name" class="form-control" placeholder="Name"
-                         pattern=[A-Z\sa-z]{3,20} required>
-
-                  <label for="name">Name</label>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-floating">
-                  <input type="email" name="visitor_email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                         placeholder="Email address" required>
-
-                  <label for="email">Email address</label>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="form-check form-check-inline">
-                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox1" value="Info">
-
-                  <label class="form-check-label" for="inlineCheckbox1">
-                    <i class="bi-info-lg form-check-icon"></i>
-                    <span class="form-check-label-text">Info</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="form-check form-check-inline">
-                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox2" value="Request">
-
-                  <label class="form-check-label" for="inlineCheckbox2">
-                    <i class="bi-box form-check-icon"></i>
-                    <span class="form-check-label-text">Request</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="form-check form-check-inline">
-                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox3" value="Technical">
-
-                  <label class="form-check-label" for="inlineCheckbox3">
-                    <i class="bi-cpu form-check-icon"></i>
-                    <span class="form-check-label-text">Technical</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-6">
-                <div class="form-check form-check-inline me-0">
-                  <input name="field" type="radio" class="form-check-input" id="inlineCheckbox4" value="Other">
-
-                  <label class="form-check-label" for="inlineCheckbox4">
-                    <i class="bi-three-dots form-check-icon"></i>
-                    <span class="form-check-label-text">Other</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-lg-12 col-12">
-                <div class="form-floating">
-                  <textarea class="form-control" id="message" name="visitor_message"
-                            placeholder="Tell me about the project" required></textarea>
-
-                  <label for="message">Write me a message...</label>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-12 ms-auto">
-                <button type="button" class="form-control" onclick="sendMail()">Send</button>
-              </div>
-
+        <div class="col-lg-6 col-12 mt-5 mt-lg-0 mx-auto">
+          <div class="contact-form contact-cta-wrap">
+            <div class="contact-cta">
+              <p class="contact-cta-text">Send me an email</p>
+              <a title="Send me an email" href="mailto:joe.nagelmaier@gmail.com" class="custom-btn custom-border-btn btn contact-cta-btn">Send me an email</a>
             </div>
-          </form>
+          </div>
         </div>
 
       </div>

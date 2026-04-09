@@ -831,7 +831,31 @@ strong {
 }
 
 .contact-form {
-  margin-left: 10px;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-cta-wrap {
+  width: 100%;
+}
+
+.contact-cta {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  padding: 36px 28px;
+}
+
+.contact-cta-text {
+  margin-bottom: 18px;
+}
+
+.contact-cta-btn {
+  display: inline-block;
+  min-width: 220px;
 }
 
 
@@ -1284,6 +1308,10 @@ strong {
     width: 35.5px;
     height: 35.5px;
     line-height: 35.5px;
+  }
+
+  .contact-cta {
+    padding: 28px 20px;
   }
 
   .hero-image-wrap {
